@@ -36,6 +36,11 @@
 
 }
 
+.top-contents i {
+  display: inline-block;
+  color: white;
+}
+
 .message01 {
   overflow: hidden;
   // text-indent: 100%;
@@ -63,6 +68,25 @@
 
 .top-contents h2 {
   color: white;
+}
+
+.about-btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 4px;
+  background-color: rgba(66,120,51,0.4);
+  color: #fff;
+  width: 300px;
+  display: block;
+  text-align: center;
+  height: 65px;
+  font-size: 1.3125rem;
+  line-height: 65px;
+  position: absolute;
+  transition: all 0.2s;
+  top: 450px;
+  left: 30%;
 }
 
 
