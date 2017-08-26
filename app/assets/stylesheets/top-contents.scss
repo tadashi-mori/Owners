@@ -45,7 +45,7 @@
   width: 751px;
   position: absolute;
   top: 260px;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
 }
 
@@ -57,7 +57,7 @@
   width: 751px;
   position: absolute;
   top: 350px;
-  left: 60%;
+  left: 65%;
   transform: translateX(-50%);
 }
 
@@ -87,19 +87,6 @@
   position: absolute;
   transition: all 0.2s;
   top: 450px;
-  left: 30%;
+  left: 34%;
 }
 
-
-.middle-contents {
-  background-color: red;
-  height: calc(100vh - 30vh);
-  width: 100%;
-  overflow-y: scroll;
-}
-
-.bottom-contents {
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdqVUsD6mUJtqeX9iGK9VrDEx_zpamNX9TrPSSwApQtdrSJBWhA);
-  height: 200px;
-  width: 100%;
-}

@@ -1,0 +1,41 @@
+.middle-contents {
+  height: calc(100vh - 30vh);
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.bottom-contents {
+  background-color: black;
+  height: 200px;
+  text-align: center;
+}
+
+.bottom-contents footer {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bottom-contents h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.f-navi {
+  right: 0;
+  top: 90px;
+  left: 0;
+  position: absolute;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: white;
+      font-size: 15px;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
