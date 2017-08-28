@@ -2,5 +2,5 @@
 @import "./reset";
 @import "./project";
 @import "font-awesome";
-@import "./top-contents";
-@import "./bottom-contents";
+@import "./hero";
+@import "./footer";
