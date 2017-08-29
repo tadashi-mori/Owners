@@ -3,10 +3,11 @@
   width: 100%;
 }
 
-.item-area {
+.item-area .item-link {
   width: 1100px;
   margin: 0 auto;
   padding-top: 30px;
+  float: left;
   padding-bottom: 106px;
 }
 
@@ -18,16 +19,17 @@
 .item-link {
   width: 340px;
   display: block;
-  // float: left;
+  float: left;
   margin-right: 40px;
   min-height: 390px;
 }
 
 .items {
-  width: 340px;
+  width: 380px;
   display: block;
   float: left;
   margin-right: 40px;
+  margin-left: 120px;
   position: relative;
   margin-bottom: 48px;
 
@@ -36,16 +38,17 @@
     margin-top: 10px;
     font-weight: normal;
     color: #2d1c09;
+    margin-left: 50px;
   }
 }
 
 .status {
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 16px;
+  left: 40px;
   z-index: 2;
   display: inline-block;
-  background-image: url(https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/71/main_image/w340h223_20862262_1360004164097970_743720065_o.jpg);
+  // background-image: url(https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/71/main_image/w340h223_20862262_1360004164097970_743720065_o.jpg);
   background-repeat: no-repeat;
   background-position: -67px 0px;
   width: 61px;
@@ -84,6 +87,7 @@
   width: 50%;
   color: #6d796a;
   font-size: 0.75rem;
+  padding-left: 33px;
 
   i {
     margin-top: 4px;
@@ -173,5 +177,3 @@
     text-align: center;
   }
 }
-
-
