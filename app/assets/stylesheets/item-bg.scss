@@ -1,0 +1,179 @@
+.item-bg {
+  background: #fff;
+  width: 100%;
+}
+
+.item-area .item-link {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 30px;
+  float: left;
+  padding-bottom: 106px;
+}
+
+// .clearfix:before {
+//   content: "";
+//   display: table;
+// }
+
+.item-link {
+  width: 340px;
+  display: block;
+  float: left;
+  margin-right: 40px;
+  min-height: 390px;
+}
+
+.items {
+  width: 380px;
+  display: block;
+  float: left;
+  margin-right: 40px;
+  margin-left: 120px;
+  position: relative;
+  margin-bottom: 48px;
+
+  h2 {
+    font-size: 1.125rem;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #2d1c09;
+    margin-left: 50px;
+  }
+}
+
+.status {
+  position: absolute;
+  top: 16px;
+  left: 40px;
+  z-index: 2;
+  display: inline-block;
+  // background-image: url(https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/71/main_image/w340h223_20862262_1360004164097970_743720065_o.jpg);
+  background-repeat: no-repeat;
+  background-position: -67px 0px;
+  width: 61px;
+  height: 66px;
+  background-size: 244px 100px;
+  color: #fff;
+
+  p {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-top: 22px;
+  }
+}
+
+.item-image {
+  width: 340px;
+  height: 223px;
+  overflow: hidden;
+  z-index: 1;
+  box-sizing: border-box;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.info {
+  display: table;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.place {
+  display: table-cell;
+  width: 50%;
+  color: #6d796a;
+  font-size: 0.75rem;
+  padding-left: 33px;
+
+  i {
+    margin-top: 4px;
+    vertical-align: top;
+  }
+}
+
+.sprite-2x.icon-pin {
+  display: inline-block;
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/71/main_image/w340h223_20862262_1360004164097970_743720065_o.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -194px;
+  width: 13px;
+  height: 17px;
+  background-size: 751px 211px;
+}
+
+.price {
+  display: table-cell;
+  width: 50%;
+  color: #6d796a;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.sprite-2x.icon-bag {
+  display: inline-block;
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/owners-pro/Product/71/main_image/w340h223_20862262_1360004164097970_743720065_o.jpg);
+  background-repeat: no-repeat;
+  background-position: -76px -175px;
+  width: 15px;
+  height: 16px;
+  background-size: 751px 211px;
+}
+
+.owner-info-hover {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 340px;
+  height: 100%;
+}
+
+.shop-partner {
+  width: 70px;
+  height: 80px;
+  border-radius: 35px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    text-transform: translateX(-50%);
+    border-radius: 50%;
+  }
+}
+
+.shop-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.partner-message {
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+
+  p{
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 0.8125rem;
+    color: #000;
+    text-align: center;
+  }
+}

@@ -1,0 +1,65 @@
+footer {
+  background-color: black;
+  clear: both;
+}
+
+.f-content {
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+  color: white;
+
+  h2{
+    font-size: 30px;
+    padding-left: 75px;
+  }
+}
+
+.sprite-2x.logo {
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+}
+
+.f-navi {
+  text-align: center;
+  margin-top: 20px;
+
+  li {
+    display: inline-block;
+    padding: 0 30px;
+    border-right: 1px solid #fff;
+
+    a {
+      color: white;
+      font-size: 15px;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
+.copy {
+  margin-top: 30px;
+  position: relative;
+}
+
+
+
+.f-sns-area {
+  position: absolute;
+  left: 640px;
+  top: 142px;
+  z-index: 2;
+
+  li {
+    display: inline-block;
+    margin-left: 6px;
+
+    a{
+      text-decoration: none;
+    }
+  }
+}

@@ -1,3 +1,8 @@
 @import "./mixin/clearfix";
 @import "./reset";
-@import "./projects";
+@import "./project";
+@import "font-awesome";
+@import "./hero";
+@import "./footer";
+@import "./message";
+@import "./item-bg";
