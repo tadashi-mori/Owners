@@ -1,13 +1,14 @@
 @import "./mixin/clearfix";
 @import "./reset";
-@import "./project";
+@import "./project/project";
 @import "font-awesome";
-@import "./hero";
-@import "./footer";
-@import "./message";
-@import "./item-bg";
-@import "./user";
-@import "./header";
-@import "./mypage-left";
+@import "./project/hero";
+@import "./project/footer";
+@import "./project/message";
+@import "./project/item-bg";
+@import "./user/user";
+@import "./user/header";
+@import "./user/mypage-left";
+@import "./user/mypage-content";
 
 
