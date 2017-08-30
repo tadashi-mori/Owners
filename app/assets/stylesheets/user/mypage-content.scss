@@ -29,6 +29,10 @@
   width: 340px;
   height: 230px;
   overflow: scroll;
+
+  p {
+    margin: 10px 10px 10px 20px;
+  }
 }
 
 .news-official dl:first-child {
@@ -39,3 +43,56 @@
   border-top: 1px dotted #d2cec7;
   padding: 10px 0 10px 10px;
 }
+
+.latest-news {
+  width: 440px;
+  float: right;
+}
+
+.products-area {
+  padding-top: 40px;
+  clear: both;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    height: 29px;
+  }
+}
+
+.products {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 230px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
