@@ -3,12 +3,12 @@
 @import "./project/project";
 @import "font-awesome";
 @import "./project/hero";
-@import "./project/footer";
+@import "./share/footer";
 @import "./project/message";
 @import "./project/item-bg";
 @import "./user/user";
 @import "./user/header";
 @import "./user/mypage-left";
 @import "./user/mypage-content";
-
+@import "./project/hero-single";
 

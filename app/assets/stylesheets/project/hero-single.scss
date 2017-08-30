@@ -1,0 +1,66 @@
+.hero-single {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvThlWTpLCBTkfNgoZY551MY9EFf5d1UoC2TU1sWMCyUNvWRB8Q);
+  background-size: cover;
+  height: 690px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  i {
+    color: white;
+    height: 30px;
+    width: 30px;
+  }
+
+}
+
+.header {
+  width: 1100px;
+  position: relative;
+  margin: 0 auto;
+
+  h1 {
+    color: white;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+  }
+}
+
+.h-navi {
+  position: absolute;
+  right: 0;
+  top: 30px;
+
+
+  li {
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+    line-height: 0;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+  }
+}
+
+.message01 {
+  overflow: hidden;
+  // text-indent: 100%;
+  font-size: 40px;
+  white-space: nowrap;
+  display: block;
+  width: 950px;
+  position: absolute;
+  top: 260px;
+  left: 55%;
+  transform: translateX(-50%);
+  letter-spacing: 0.5em;
+  color: white;
+  word-break: keep-all;
+}
