@@ -52,7 +52,7 @@
 .message01 {
   overflow: hidden;
   // text-indent: 100%;
-  font-size: 40px;
+  font-size: 30px;
   white-space: nowrap;
   display: block;
   width: 950px;
@@ -62,5 +62,5 @@
   transform: translateX(-50%);
   letter-spacing: 0.5em;
   color: white;
-  word-break: keep-all;
+  word-break: normal;
 }
