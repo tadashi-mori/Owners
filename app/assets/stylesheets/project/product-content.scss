@@ -60,12 +60,68 @@
   text-align: left;
 }
 
+.blog-area dl {
+  display: table;
+  margin-bottom: 8px;
+  z-index: 1;
+  position: relative;
 
+  dt {
+    width: 36px;
+    text-align: right;
+  }
 
+  dd {
+    padding-left: 20px;
+    text-indent: -15px;
+    display: block;
+  }
 
+  a {
+    color: #2d1d09;
+    text-decoration: underline;
+    position: relative;
+    z-index: 3;
+  }
+}
 
+.icon-pen-b {
+  display: inline-block;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: -277px -157px;
+  width: 14px;
+  height: 14px;
+  background-size: 751px 211px;
+}
 
+.paper:after {
+  content: "";
+  border-radius: 50%;
+  background-color: #5f993f;
+  box-shadow: 0px 3px 0px 0px rgba(95, 153, 63, 0.4);
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-6px);
+  z-index: 10;
+}
 
+.law {
+  text-align: center;
+
+  a {
+    color: #2d1d09;
+    text-decoration: underline;
+  }
+}
+
+.order {
+  clear: both;
+  margin-top: 20px;
+}
 
 
 
