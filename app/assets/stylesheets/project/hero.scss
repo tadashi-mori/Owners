@@ -1,0 +1,103 @@
+.hero {
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/owners-pro/ProductContent/748/content_image/w740h420_20862262_1360004164097970_743720065_o.jpg);
+  background-size: cover;
+  height: 690px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  i {
+    color: white;
+    height: 30px;
+    width: 30px;
+  }
+
+}
+
+.header {
+  width: 1100px;
+  position: relative;
+  margin: 0 auto;
+
+  h1 {
+    color: white;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+  }
+}
+
+.h-navi {
+  position: absolute;
+  right: 0;
+  top: 30px;
+
+
+  li {
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+    line-height: 0;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+  }
+}
+
+.message01 {
+  overflow: hidden;
+  // text-indent: 100%;
+  font-size: 40px;
+  white-space: nowrap;
+  display: block;
+  width: 950px;
+  position: absolute;
+  top: 260px;
+  left: 55%;
+  transform: translateX(-50%);
+  letter-spacing: 0.5em;
+}
+
+.message02 {
+  overflow: hidden;
+  // text-indent: 100%;
+  white-space: nowrap;
+  display: block;
+  width: 751px;
+  position: absolute;
+  top: 350px;
+  left: 62%;
+  font-size: 30px;
+  transform: translateX(-50%);
+}
+
+.hero h2 {
+  color: white;
+}
+
+
+.about-btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 4px;
+  background-color: rgba(66,120,51,0.4);
+  color: #fff;
+  width: 300px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  height: 65px;
+  font-size: 1.3125rem;
+  line-height: 65px;
+  position: absolute;
+  transition: all 0.2s;
+  top: 450px;
+  left: 34%;
+}
+
