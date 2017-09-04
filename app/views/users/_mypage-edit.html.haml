@@ -1,0 +1,44 @@
+.mypage-content
+  .table-layout
+    .center-column
+      %section.edit-area
+        %h2 アカウント設定
+        .edit-area
+          %article.clearfix
+            .product-edit
+              .w-box
+                %dl
+                  %dt
+                    名前
+                    %span ※
+                  %dd
+                    .input
+                      .input.text
+                        %input#OwnerSei.jq-placeholder.w100p.style02{:name => "", :placeholder => "名前", :title => "名前", :type => "string", :value => ""}/
+                %dl
+                  %dt
+                    メールアドレス
+                    %span ※
+                  %dd
+                    .input
+                      .input.email
+                        %input#OwnerEmail.jq-placeholder.w100p.style02{:maxlength => "255", :name => "", :placeholder => "メールアドレス", :title => "名前", :type => "string", :value => ""}/
+                %dl
+                  %dt
+                    パスワード
+                    %span ※
+                  %dd
+                    .input
+                      .input.password
+                        %input#OwnerPassword.jq-placeholder.w100p.style02{:name => "", :placeholder => "password", :title => "名前", :type => "password", :value => ""}/
+                %dl
+                  %dt
+                    プロフィール画像
+                  %dd
+                    .p-right
+                      %div{"upload-button" => ""}
+                        %i.sprite-2x.icon-upload
+                        ファイルを選択
+                        .input.file
+                          %input#OwnerProfileImage{:name => "", :type => "file"}/
+                        %input#uv.upload-value{:name => "", :type => "text"}/
