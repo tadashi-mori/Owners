@@ -7,10 +7,10 @@
         %input{:id => "", :name => "data[_Token][key]", :type => "hidden", :value => ""}/
       .input
         .input.text
-          %input#last-name.jq-placeholder.style01.w300{:name => "name", :placeholder => "名前", :style => "color: silver;", :type => "string"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "name", :value => @user.name, :placeholder => "名前", :style => "color: silver;", :type => "string"}/
       .input
         .input.text
-          %input#last-name.jq-placeholder.style01.w300{:name => "email", :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "email", :value => @user.email, :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
       .input
         .input.password
           %input#last-name.jq-placeholder.style01.w300{:name => "", :placeholder => "パスワード", :style => "color: silver;", :type => "password"}/
