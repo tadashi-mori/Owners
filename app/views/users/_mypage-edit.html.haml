@@ -37,8 +37,9 @@
                   %dd
                     .p-right
                       %div{"upload-button" => ""}
-                        %i.sprite-2x.icon-upload
-                        ファイルを選択
-                        .input.file
-                          %input#OwnerProfileImage{:name => "", :type => "file"}/
-                        %input#uv.upload-value{:name => "", :type => "text"}/
+                        .upload-button
+                          %i.sprite-2x.icon-upload
+                            ファイルを選択
+                          .input.file
+                            %input#OwnerProfileImage{:name => "", :type => "file"}/
+                          %input#uv.upload-value{:name => "", :type => "text"}/
