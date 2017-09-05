@@ -43,3 +43,11 @@
                           .input.file
                             %input#OwnerProfileImage{:name => "", :type => "file"}/
                           %input#uv.upload-value{:name => "", :type => "text"}/
+
+    .right-colum-edit
+      .w-box.clearfix{:style => "margin-top: 30px;"}
+        .btn-parts
+          %a.btn-normal{:href => ""} 戻る
+        .btn-parts{:style => "margin-bottom: 0;"}
+          %input#OwnerId{:name => "", :type => "hidden", :value => ""}/
+          %input#account_submit.btn-green{:name => "", :type => "submit", :value => "更新"}/
