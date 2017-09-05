@@ -23,4 +23,15 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
   end
 
+  def update
+    @user = User.find_by(id: params[:id])
+    @user.name = params[:name]
+    @user.email = params[:email]
+    if @user.save
+      redirect_to("/users/#{@user.id}")
+    else
+      render("/user/edit")
+    end
+  end
+
 end
