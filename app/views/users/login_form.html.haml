@@ -1,16 +1,16 @@
 #login-inner
   %section.form-login01
     %h1 ログイン
-    = form_tag("/users/create") do
+    = form_tag("/login") do
       %div{:style => "display: none"}
         %input{:name => "_method", :type => "hidden", :value => "POST"}/
         %input{:id => "", :name => "data[_Token][key]", :type => "hidden", :value => ""}/
       .input
         .input.text
-          %input#last-name.jq-placeholder.style01.w300{:name => "", :value => "", :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "email", :value => "", :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
       .input
         .input.password
-          %input#last-name.jq-placeholder.style01.w300{:name => "", :placeholder => "パスワード", :style => "color: silver;", :type => "password"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "password", :placeholder => "パスワード", :style => "color: silver;", :type => "password"}/
         %label{:style => "font-size: 11px;"}
 
       %input#signup_submit.submit.w300.green{:name => "", :type => "submit", :value => "ログイン"}/
