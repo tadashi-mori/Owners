@@ -5,6 +5,10 @@
       %a{:href => "/"}
     %nav
       %ul.user-navi
+        - if session[:user_id]
+          %li
+            現在ログインしているユーザーのid:
+            \#{session[:user_id]}
         %li
           %a{:href => "/about"}
             %i.sprite-2x.icon-q-b
