@@ -1,3 +1,10 @@
+.mypage-content {
+  width: 820px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  float: right;
+}
+
 .table-layout {
   width: 100%;
 }
@@ -40,7 +47,7 @@
   }
 }
 
-.w-box {
+.e-box {
   background: #fff;
   border-radius: 10px;
   box-sizing: border-box;
@@ -97,74 +104,23 @@
   }
 }
 
-.icon-upload {
-  display: inline-block;
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position: -352px -131px;
-  width: 11px;
-  height: 11px;
-  background-size: 751px 211px;
-}
+// .icon-upload {
+//   display: inline-block;
+//   background-image: url();
+//   background-repeat: no-repeat;
+//   background-position: -352px -131px;
+//   width: 11px;
+//   height: 11px;
+//   background-size: 751px 211px;
+// }
 
-.upload-value {
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  padding: 3px;
-  color: #333;
-  position: absolute;
-  top: 0;
-  left: 165px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// .upload-value {
+//   height: 40px;
+//   line-height: 40px;
+//   display: inline-block;
+//   padding: 3px;
+//   color: #333;
+//   position: absolute;
+//   top: 0;
+//   left: 165px;
+// }
