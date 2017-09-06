@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(name: params[:name], email: params[:email])
+    @user = User.new(name: params[:name], email: params[:email], password: params[:password])
     if @user.save
     redirect_to("/users/#{@user.id}")
     else
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to("/users/#{@user.id}")
     else
-      render("/user/edit")
+      render("/users/edit")
     end
   end
 
@@ -41,12 +41,17 @@ class UsersController < ApplicationController
     @user = User.find_by(email: params[:email], password: params[:password])
     if @user
       session[:user_id] = @user.id
-      redirect_to("users/show")
+      redirect_to("/users/#{@user.id}")
     else
       @email = params[:email]
       @password = params[:password]
       render("users/login_form")
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    redirect_to("/login")
   end
 
 end

@@ -20,10 +20,9 @@
         %li
           %a.sub-open{:href => "/about"}
             %i.thum
-              / %img{:alt => "", :src => "/images/noimage-square.png?1460076999"}/
           = @user.name
 
         %li
-          / %a{:href => "/users/#{@user.id}/edit"}
           = link_to("編集", "/users/#{@user.id}/edit")
-
+        %li
+          = link_to("ログアウト", "/logout", {method: :post})
