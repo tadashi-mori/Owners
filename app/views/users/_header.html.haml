@@ -5,10 +5,9 @@
       %a{:href => "/"}
     %nav
       %ul.user-navi
-        - if session[:user_id]
+        - if @current_user
           %li
-            現在ログインしているユーザーのid:
-            \#{session[:user_id]}
+            =@current_user.name
         %li
           %a{:href => "/about"}
             %i.sprite-2x.icon-q-b
@@ -17,11 +16,6 @@
           %a{:href => "/about"}
             %i.sprite-2x.icon-book-b
             使い方
-        %li
-          %a.sub-open{:href => "/about"}
-            %i.thum
-          = @user.name
-
         %li
           = link_to("編集", "/users/#{@user.id}/edit")
         %li
