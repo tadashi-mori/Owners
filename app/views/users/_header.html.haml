@@ -17,6 +17,6 @@
             %i.sprite-2x.icon-book-b
             使い方
         %li
-          = link_to("編集", "/users/#{@user.id}/edit")
+          = link_to("編集", "/users/#{@current_user.id}/edit")
         %li
           = link_to("ログアウト", "/logout", {method: :post})
