@@ -1,13 +1,14 @@
 %header.header-mypage
   .bg-white
     %h1
-      OWNERS
       %a{:href => "/"}
+        OWNERS
     %nav
       %ul.user-navi
         - if @current_user
           %li
             =@current_user.name
+            さん
         %li
           %a{:href => "/about"}
             %i.sprite-2x.icon-q-b
@@ -16,8 +17,5 @@
           %a{:href => "/about"}
             %i.sprite-2x.icon-book-b
             使い方
-        - if @user.id == @current_user.id
-          %li
-            = link_to("編集", "/users/#{@current_user.id}/edit")
         %li
           = link_to("ログアウト", "/logout", {method: :post})

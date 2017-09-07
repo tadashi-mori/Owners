@@ -1,7 +1,7 @@
 .mypage-content {
   width: 820px;
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   float: right;
 }
 
@@ -12,6 +12,16 @@
 .center-column {
   width: 520px;
   float: left;
+}
+
+.right-column-edit {
+  width: 260px;
+  float: right;
+
+  .w-box {
+    padding: 15px 20px;
+    height: auto;
+  }
 }
 
 .edit-area {
@@ -38,7 +48,7 @@
 
     dt {
       vertical-align: top;
-      width: 20%;
+      width: 30%;
 
       span {
         color: red;
@@ -104,27 +114,6 @@
   }
 }
 
-// .icon-upload {
-//   display: inline-block;
-//   background-image: url();
-//   background-repeat: no-repeat;
-//   background-position: -352px -131px;
-//   width: 11px;
-//   height: 11px;
-//   background-size: 751px 211px;
-// }
-
-// .upload-value {
-//   height: 40px;
-//   line-height: 40px;
-//   display: inline-block;
-//   padding: 3px;
-//   color: #333;
-//   position: absolute;
-//   top: 0;
-//   left: 165px;
-// }
-
 .right-column-edit {
   width: 260px;
   float: right;
@@ -135,10 +124,17 @@
   height: 40px;
   line-height: 40px;
   margin-bottom: 17px;
+
+  .btn-green {
+    width: 220px;
+    line-height: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+  }
 }
 
 .btn-normal {
-  width: 277px;
+  width: 195px;
   border: 1px solid #427833;
   border-radius: 5px;
   background-color: #fff;
@@ -149,8 +145,9 @@
   text-decoration: none;
   height: 40px;
   line-height: 40px;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   padding: 0 10px;
+  color: #427833;
 }
 
 .btn-green {

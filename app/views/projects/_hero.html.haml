@@ -14,14 +14,21 @@
           %a{:href => "/about"}
             %i.sprite-2x.icon-book
             使い方
-        %li
-          %a{:href => "/signup"}
-            %i.sprite-2x.icon-plus
-            会員登録
-        %li
-          %a{:href => "/login"}
-            %i.sprite-2x.icon-login
-            ログイン
+        - if @current_user
+          %li
+            %a{:href => "/users/#{@current_user.id}"}
+              =@current_user.name
+              さん
+        - else
+          %li
+            %a{:href => "/signup"}
+              %i.sprite-2x.icon-plus
+                会員登録
+          %li
+            %a{:href => "/login"}
+              %i.sprite-2x.icon-login
+                ログイン
+
 
 
 
