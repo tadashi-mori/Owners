@@ -1,0 +1,54 @@
+.mypage-content
+  .table-layout
+    .center-column
+      %section.edit-area
+        %h2 アカウント設定
+        = form_tag("/users/#{@user.id}/update", {multipart: true}) do
+          .edit-area
+            %article.clearfix
+              .product-edit
+                .e-box
+                  %dl
+                    %dt
+                      名前
+                      %span ※
+                    %dd
+                      .input
+                        .input.text
+                          %input#OwnerSei.jq-placeholder.w100p.style02{:name => "name", :placeholder => "名前", :title => "名前", :type => "string", :value => @user.name}/
+                  %dl
+                    %dt
+                      メールアドレス
+                      %span ※
+                    %dd
+                      .input
+                        .input.email
+                          %input#OwnerEmail.jq-placeholder.w100p.style02{:maxlength => "255", :name => "email", :placeholder => "メールアドレス", :title => "名前", :type => "string", :value => @user.email}/
+                  %dl
+                    %dt
+                      パスワード
+                      %span ※
+                    %dd
+                      .input
+                        .input.password
+                          %input#OwnerPassword.jq-placeholder.w100p.style02{:name => "password", :placeholder => "password", :title => "名前", :type => "password", :value => ""}/
+                  %dl
+                    %dt
+                      プロフィール画像
+                    %dd
+                      .p-right
+                        %div{"upload-button" => ""}
+                          .upload-button
+                            %i.sprite-2x.icon-upload
+                              ファイルを選択
+                            .input.file
+                              %input#OwnerProfileImage{:name => "image", :type => "file"}/
+                            %input#uv.upload-value{:name => "image", :type => "file"}/
+
+    .right-column-edit
+      .w-box.clearfix{:style => "margin-top: 30px;"}
+        .btn-parts
+          %a.btn-normal{:href => "/users/#{@current_user.id}"} 戻る
+        .btn-parts{:style => "margin-bottom: 0;"}
+          %input#OwnerId{:name => "", :type => "hidden", :value => ""}/
+          %input#account_submit.btn-green{:name => "", :type => "submit", :value => "更新"}/

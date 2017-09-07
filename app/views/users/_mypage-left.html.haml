@@ -1,26 +1,25 @@
-#mypage
-  .mypage-left
-    %section.menu
-      %figure.member-photo
-        %img{:src => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssxYzTzGrQASv8DpXw6PQ3itMPTSghdas7vadd2qKMzWEESzq"}/
-      %h2 森 維志
-      %ul.side-menu
-        %li
-          %a{:href => "/"}
-            %i.sprite-2x.icon-arrow-b-m
-            ダッシュボード
-        %li
-          %a{:href => "/"}
-            %i.sprite-2x.icon-arrow-b-m
-            送り先情報
-        %li
-          %a{:href => "/"}
-            %i.sprite-2x.icon-arrow-b-m
-            購入履歴
-    .comment.w-box
-      %h3 運営に意見を送る
-      %form{:acrion => "/", :method => "post"}
-        #feedback_div.textarea
-          %textarea#feedback_message.style02.w100p{:placeholder => "ご意見・ご要望などございましたらお寄せ下さい。なお、返信を要する内容については、問い合わせフォームよりお願い致します。", :style => "font-size: 12px; height: 150px;"}
-          %input#feedback_id{:name => "owner_id", :type => "hidden", :value => "2233"}/
-        %input#feedback_submit.submit{:type => "buttun", :value => "送信"}/
+.mypage-left
+  %section.menu
+    %figure.member-photo
+      %img{:src => "/user_images/#{@user.image_name}"}/
+    %h2=@user.name
+    %ul.side-menu
+      %li
+        %a{:href => "/users/#{@current_user.id}/edit"}
+          %i.sprite-2x.icon-arrow-b-m
+          アカウント設定
+      %li
+        %a{:href => "/"}
+          %i.sprite-2x.icon-arrow-b-m
+          送り先情報
+      %li
+        %a{:href => "/"}
+          %i.sprite-2x.icon-arrow-b-m
+          購入履歴
+  .comment.w-box
+    %h3 運営に意見を送る
+    %form{:acrion => "/", :method => "post"}
+      #feedback_div.textarea
+        %textarea#feedback_message.style02.w100p{:placeholder => "ご意見・ご要望などございましたらお寄せ下さい。なお、返信を要する内容については、問い合わせフォームよりお願い致します。", :style => "font-size: 12px; height: 150px;"}
+        %input#feedback_id{:name => "owner_id", :type => "hidden", :value => "2233"}/
+      %input#feedback_submit.submit{:type => "buttun", :value => "送信"}/

@@ -23,10 +23,16 @@
     font-size: 30px;
     font-style: oblique;
     font-weight: bold;
+
+    a {
+      text-decoration: none;
+      margin-left: 47px;
+      color: black;
+    }
   }
 }
 
-.h-navi {
+.user-navi {
   top: 20px;
   position: absolute;
   right: 0;
