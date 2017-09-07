@@ -2,8 +2,8 @@
   .mypage-left
     %section.menu
       %figure.member-photo
-        %img{:src => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssxYzTzGrQASv8DpXw6PQ3itMPTSghdas7vadd2qKMzWEESzq"}/
-      %h2 森 維志
+        %img{:src => "/user_images/#{@user.image_name}"}/
+      %h2=@user.name
       %ul.side-menu
         %li
           %a{:href => "/"}
