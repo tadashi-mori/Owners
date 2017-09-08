@@ -1,12 +1,29 @@
-%head
-%body
-  .wrapper
-    .container
+#login-inner
+  %section.form-login01
+    %h1 登録
+    = form_tag("/projects/create") do
+      %div{:style => "display: none"}
+        %input{:name => "_method", :type => "hidden", :value => "POST"}/
+        %input{:id => "", :name => "data[_Token][key]", :type => "hidden", :value => ""}/
+      .input
+        .input.text
+          %input#last-name.jq-placeholder.style01.w300{:name => "name", :value => "", :placeholder => "タイトル", :style => "color: silver;", :type => "string"}/
+      .input
+        .input.text
+          %input#last-name.jq-placeholder.style01.w300{:name => "email", :value => "", :placeholder => "生産地", :style => "color: silver;", :type => "string"}/
+      .input
+        .input.text
+          %input#last-name.jq-placeholder.style01.w300{:name => "email", :value => "", :placeholder => "価格", :style => "color: silver;", :type => "string"}/
+      .p-right
+        %div{"upload-button" => ""}
+          .upload-button.project-image
+            %i.sprite-2x.icon-upload
+              ファイルを選択
+            .input.file
+              %input#OwnerProfileImage{:name => "image", :type => "file"}/
+            %input#uv.upload-value{:name => "image", :type => "file"}/
 
-=render partial: 'hero-single'
-
-=render partial: 'product-data'
-
-=render partial: 'product-content'
-
-=render partial: 'share/footer'
+      %input#signup_submit.submit.w300.green{:name => "", :type => "submit", :value => "登録"}/
+      %div{:style => "display: none;"}
+        %input{:name => "", :type => "hidden"}/
+        %input{:name => "", :type => "hidden"}/
