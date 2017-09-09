@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   post "users/create" => "users#create"
   get "signup" => "users#new"
   post "projects/create" => "projects#create"
-  resources :projects
+  resources :projects do
+    resources :orders
+  end
   resources :users
   resources :articles
 end

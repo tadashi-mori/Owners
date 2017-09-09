@@ -1,0 +1,46 @@
+%head
+%body
+  .wrapper
+    .container
+
+      =render partial: 'share/header'
+
+
+
+
+
+      %section#cart
+        %h2 オーナープランお申し込み
+        .cart-content
+          .cart-main
+            %img{:alt => "", :src => ""}/
+            %form#OrderInputForm{"accept-charset" => "utf-8", :action => "", :method => "post"}
+              %div{:style => "display: none;"}
+                %input{:name => "_method", :type => "hidden", :value => "POST"}/
+                %input{:name => "", :type => "hidden"}/
+              %section.form-content
+                %h3 お申込み内容
+                %dl.application-detail
+                  %dt 登録プラン
+                  %dd 【第2期】溢れる果汁とりんご本来の味。信州の丘の上で育った２つの「シナノ」と「完熟サンふじ」
+                  %dt 金額
+                  %dd
+                    ¥
+                    %span.price 10,000
+                    %span.unit 一口
+              %h3 登録数入力
+              %dl.buy-num
+                %dt
+                  .input
+                    %label{:for => ""}
+                      %select{:id => "", :name => "", :style => ""}
+                        %option{:value => "1"} 1
+                        %option{:value => "2"} 2
+                        %option{:value => "3"} 3
+                    口
+                %dd
+                  %span.mr20 合計
+                  %span ¥
+                  %span#span_total
+              %input#including_tax_price{:name => "", :type => "hidden", :value => "10000"}/
+              %input#total_data{:name => "", :type => "hidden", :value => "10000"}/
