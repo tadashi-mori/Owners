@@ -1,19 +1,19 @@
 #login-inner
   %section.form-login01
     %h1 登録
-    = form_tag("/projects/create") do
+    = form_tag("/projects/create", {multipart: true}) do
       %div{:style => "display: none"}
         %input{:name => "_method", :type => "hidden", :value => "POST"}/
         %input{:id => "", :name => "data[_Token][key]", :type => "hidden", :value => ""}/
       .input
         .input.text
-          %input#last-name.jq-placeholder.style01.w300{:name => "name", :value => "", :placeholder => "タイトル", :style => "color: silver;", :type => "string"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "title", :value => "", :placeholder => "タイトル", :style => "color: silver;", :type => "text"}/
       .input
         .input.text
-          %input#last-name.jq-placeholder.style01.w300{:name => "email", :value => "", :placeholder => "生産地", :style => "color: silver;", :type => "string"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "producing_area", :value => "", :placeholder => "生産地", :style => "color: silver;", :type => "text"}/
       .input
         .input.text
-          %input#last-name.jq-placeholder.style01.w300{:name => "email", :value => "", :placeholder => "価格", :style => "color: silver;", :type => "string"}/
+          %input#last-name.jq-placeholder.style01.w300{:name => "price", :value => "", :placeholder => "価格", :style => "color: silver;", :type => "integer"}/
       .p-right
         %div{"upload-button" => ""}
           .upload-button.project-image

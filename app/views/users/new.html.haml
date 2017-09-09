@@ -1,7 +1,7 @@
 #login-inner
   %section.form-login01
     %h1 登録
-    = form_tag("/users/create") do
+    = form_tag("/projects/create") do
       %div{:style => "display: none"}
         %input{:name => "_method", :type => "hidden", :value => "POST"}/
         %input{:id => "", :name => "data[_Token][key]", :type => "hidden", :value => ""}/

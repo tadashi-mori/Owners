@@ -19,6 +19,9 @@
             %a{:href => "/users/#{@current_user.id}"}
               =@current_user.name
               さん
+          %li
+            %a{:href => "/projects/new"}
+              プロジェクト投稿
         - else
           %li
             %a{:href => "/signup"}
