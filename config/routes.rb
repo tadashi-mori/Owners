@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post "users/:id/update" => "users#update"
   post "users/create" => "users#create"
   get "signup" => "users#new"
+  post "projects/create" => "projects#create"
   resources :projects
   resources :users
   resources :articles

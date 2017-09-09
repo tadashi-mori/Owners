@@ -10,10 +10,14 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @project = Project.new
   end
 
   def create
-    redirect_to("/projects/index")
+    @project = Project.new(title: params[:title], producing_area: params[:producing_area], price: params[:price], image: "default_project.jpg")
+
+    @project.save
+    redirect_to("/projects")
   end
 
 end
