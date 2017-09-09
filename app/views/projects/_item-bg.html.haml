@@ -3,7 +3,7 @@
     .item-contents
       / アイテムリストはここから
     - @projects.each do |project|
-      %a.item-link{:href => "/projects/show"}
+      %a.item-link{:href => "/projects/#{project.id}"}
         %section.items
           .status.open
           %figure.item-image
