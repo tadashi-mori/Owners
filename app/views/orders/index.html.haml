@@ -6,9 +6,7 @@
       =render partial: 'share/header'
 
 
-
-
-    = form_tag("/projects/:project_id/orders") do
+    = form_tag("/projects/#{params[:project_id]}/orders") do
       %section#cart
         %h2 オーナープランお申し込み
         .cart-content

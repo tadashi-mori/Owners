@@ -7,7 +7,9 @@ class OrdersController < ApplicationController
   end
 
   def create
-    redirect_to("projects/index")
+    @order = Order.new(user_id: @current_user.id, project_id: params[:project_id])
+    @order.save
+    redirect_to("/users/#{@current_user.id}")
   end
 
 end
