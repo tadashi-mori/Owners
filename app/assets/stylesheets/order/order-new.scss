@@ -1,0 +1,172 @@
+#cart h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 100px 0;
+  background: #f1eee8;
+}
+
+.cart-content {
+  width: 100%;
+  background: #fff;
+  padding: 30px 0 100px;
+}
+
+.cart-main {
+  width: 740px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.form-content {
+  border: 1px solid #d2cec7;
+  box-shadow: 0px 5px 0px 0px rgba(210, 206, 199, 0.2);
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 30px 40px 40px;
+
+  h3 {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.application-detail {
+  margin-top: 30px;
+
+  dt {
+    background: #f1eee8;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  dd {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 20px;
+    margin: 20px 0 30px;
+  }
+
+  dd:last-child {
+    margin: 20px 0 0;
+  }
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.unit {
+  font-size: 1rem;
+}
+
+.form-content:after {
+  content: "";
+  border-radius: 50%;
+  background-color: #5f993f;
+  box-shadow: 0px 3px 0px 0px rgba(95,153,63,0.4);
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-6px);
+  z-index: 10;
+}
+
+.buy-num {
+  display: table;
+  width: 100%;
+
+  dt {
+    display: table-cell;
+    width: 50%;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  dd {
+    display: table-cell;
+    width: 48%;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+#select_order_count {
+  width: 140px;
+  margin-bottom: 6px;
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  border: 2px solid #d2cec7;
+  background: #fff;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.btn-area {
+  text-align: center;
+  margin-top: 70px;
+  clear: both;
+
+  a {
+    margin-right: 6px;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #427833;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 3px 0px 0px rgba(66,120,51,0.2);
+    height: 52px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color: #427833;
+    position: relative;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+}
+
+#order_submit {
+  font-size: 1rem;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 47px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@
         %h2 オーナープランお申し込み
         .cart-content
           .cart-main
-            %img{:alt => "", :src => ""}/
+            %img{:alt => "", :src => "/images/flow01.png?1460076997"}/
             %form#OrderInputForm{"accept-charset" => "utf-8", :action => "", :method => "post"}
               %div{:style => "display: none;"}
                 %input{:name => "_method", :type => "hidden", :value => "POST"}/
@@ -27,20 +27,34 @@
                   %dd
                     ¥
                     %span.price 10,000
-                    %span.unit 一口
-              %h3 登録数入力
-              %dl.buy-num
-                %dt
-                  .input
-                    %label{:for => ""}
-                      %select{:id => "", :name => "", :style => ""}
-                        %option{:value => "1"} 1
-                        %option{:value => "2"} 2
-                        %option{:value => "3"} 3
-                    口
-                %dd
-                  %span.mr20 合計
-                  %span ¥
-                  %span#span_total
-              %input#including_tax_price{:name => "", :type => "hidden", :value => "10000"}/
-              %input#total_data{:name => "", :type => "hidden", :value => "10000"}/
+                    %span.unit /一口
+              %section.form-content
+                %h3 登録数入力
+                %dl.buy-num
+                  %dt
+                    .input
+                      %label{:for => ""}
+                        %select{:id => "select_order_count", :name => "", :style => ""}
+                          %option{:value => "1"} 1
+                          %option{:value => "2"} 2
+                          %option{:value => "3"} 3
+                      口
+                  %dd
+                    %span.mr20 合計
+                    %span ¥
+                    %span#span_total 10000
+                %input#including_tax_price{:name => "", :type => "hidden", :value => "10000"}/
+                %input#total_data{:name => "", :type => "hidden", :value => "10000"}/
+
+              .btn-area
+                %a{:href => "", :class =>"btn-nomal", :style => "width: 130px;"} 戻る
+                %input{:id => "order_submit", :class => "submit icon-arrow", :style => "width: 130px;", :type => "submit", :value =>"次に進む"}
+
+
+
+
+
+
+
+
+
