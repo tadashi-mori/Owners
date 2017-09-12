@@ -53,6 +53,16 @@
   padding-top: 40px;
   clear: both;
 
+  .products {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 218px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
   h2 {
     font-size: 1rem;
     font-weight: bold;
@@ -65,7 +75,161 @@
   border-radius: 10px;
   position: relative;
   margin-bottom: 40px;
-  min-height: 218px;
+  min-height: 230px;
   padding: 20px;
   box-sizing: border-box;
+
+  .left-box {
+  float: right;
+  width: 480px;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #2d1d09;
+  }
 }
+
+.right-box {
+  width: 280px;
+  float: left;
+  margin-right: 20px;
+}
+
+.photo {
+  width: 280px;
+  height: 140px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.data {
+  overflow: hidden;
+  border-bottom: 1px dotted #d2cec7;
+  padding-bottom: 14px;
+
+  li {
+    width: 50%;
+    display: block;
+    float: left;
+    font-size: 0.75rem;
+    height: 2em;
+    vertical-align: middle;
+
+    span {
+      margin: 0 10px;
+      font-size: 0.875rem;
+      vertical-align: middle;
+    }
+
+    i {
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  }
+}
+
+.icon-arrow-b-m {
+  display: inline-block;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: 0px -175px;
+  width: 16px;
+  height: 16px;
+  background-size: 751px 211px;
+}
+
+.shop-info {
+  font-style: normal;
+
+  li {
+    display: inline-block;
+    margin-right: 40px;
+
+    i {
+      margin-right: 6px;
+    }
+  }
+}
+
+.shop-name {
+  width: 100%;
+  display: table;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-top: 8px;
+
+  h3 {
+    vertical-align: middle;
+    display: table-cell;
+    color: #2d1d09;
+    text-align: left;
+    width: 300px;
+  }
+}
+
+.thum {
+  width: 50px;
+  display: table-cell;
+  margin-bottom: 6px;
+  table-layout: fixed;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.shop img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.icon-phone {
+  display: inline-block;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: -38px -175px;
+  width: 16px;
+  height: 16px;
+  background-size: 751px 211px;
+}
+
+.icon-mail-b {
+  display: inline-block;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: -333px -131px;
+  width: 16px;
+  height: 13px;
+  background-size: 751px 211px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
