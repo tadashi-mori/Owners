@@ -18,35 +18,36 @@
   %section.products-area
     %h2 契約中のプラン
 
-  - @projects.each do |project|
-    %article.products
-      .right-box
-        %figure.photo
-          %img{:alt => "", :height => "184", :s3 => "1", :src => "/project_images/#{project.image}", :ssl => "1", :width => "280"}/
-      .left-box
-        %h3
-          %a{:href => ""}
-          =project.title
-        %ul.data
-          %li
-            数量
-            %span １口
-          %li{:style => "text-align: right;"}
-            %a.change-address.continue2{:href => ""}
-              %i.sprite-2x.icon-arrow-b-w
-              送り先情報変更
-        %address.shop-info
-          .shop-name
-            .thum
-              %figure.shop
-                %img{:alt => "", :height => "30", :s3 => "1", :src => "", :ssl => "1", :width => "30"}/
-            %h3 ASUKAのチーズ工房
+  .user_orders
+    - @projects.each do |project|
+      %article.products
+        .right-box
+          %figure.photo
+            %img{:alt => "", :height => "184", :s3 => "1", :src => "/project_images/#{project.image}", :ssl => "1", :width => "280"}/
+        .left-box
           %h3
-            .shop
-          %ul
+            %a{:href => ""}
+            =project.title
+          %ul.data
             %li
-              %i.sprite-2x.icon-phone
-              0145-42-5416
-            %li
-              %i.sprite-2x.icon-mail-b
-              kitagawahana@yahoo.co,jp
+              数量
+              %span １口
+            %li{:style => "text-align: right;"}
+              %a.change-address.continue2{:href => ""}
+                %i.sprite-2x.icon-arrow-b-w
+                送り先情報変更
+          %address.shop-info
+            .shop-name
+              .thum
+                %figure.shop
+                  %img{:alt => "", :height => "30", :s3 => "1", :src => "", :ssl => "1", :width => "30"}/
+              %h3 ASUKAのチーズ工房
+            %h3
+              .shop
+            %ul
+              %li
+                %i.sprite-2x.icon-phone
+                0145-42-5416
+              %li
+                %i.sprite-2x.icon-mail-b
+                kitagawahana@yahoo.co,jp

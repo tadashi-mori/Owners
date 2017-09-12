@@ -70,12 +70,16 @@
   }
 }
 
+.user_orders {
+  overflow-y: scroll;
+  height: 240px;
+}
+
 .products {
   background: #fff;
   border-radius: 10px;
   position: relative;
   margin-bottom: 40px;
-  min-height: 230px;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: scroll;
