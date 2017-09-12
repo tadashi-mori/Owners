@@ -4,4 +4,5 @@ class Project < ApplicationRecord
   validates :price, {presence: true}
 
   has_many :users, through: :orders
+  has_many :orders
 end

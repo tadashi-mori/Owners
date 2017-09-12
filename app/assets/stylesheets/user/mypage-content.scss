@@ -78,6 +78,7 @@
   min-height: 230px;
   padding: 20px;
   box-sizing: border-box;
+  overflow-y: scroll;
 
   .left-box {
   float: right;
@@ -104,7 +105,7 @@
 }
 
 .photo {
-  width: 280px;
+  width: 210px;
   height: 140px;
   overflow: hidden;
 

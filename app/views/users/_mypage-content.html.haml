@@ -17,13 +17,16 @@
           %p 記事がありません。
   %section.products-area
     %h2 契約中のプラン
+
+  - @orders.each do |order|
     %article.products
       .right-box
         %figure.photo
-          %img{:alt => "", :height => "184", :s3 => "1", :src => "/project_images/#{@project.image}", :ssl => "1", :width => "280"}/
+          %img{:alt => "", :height => "184", :s3 => "1", :src => "/project_images/#{order.project.image}", :ssl => "1", :width => "280"}/
       .left-box
         %h3
-          %a{:href => ""} 【第４期】搾りたて牛乳で作る感動を牧場から。ASUKAの長期熟成ホールチーズ
+          %a{:href => ""}
+          =order.project.title
         %ul.data
           %li
             数量
