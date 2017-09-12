@@ -9,9 +9,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
-    @project = Project.find_by(id: params[:id])
+    @project = Project.find(params[:id])
     @projects = @current_user.projects
-    @orders = @project.orders.includes(:user)
 
   end
 

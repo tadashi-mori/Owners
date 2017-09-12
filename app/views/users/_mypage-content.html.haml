@@ -18,15 +18,15 @@
   %section.products-area
     %h2 契約中のプラン
 
-  - @orders.each do |order|
+  - @projects.each do |project|
     %article.products
       .right-box
         %figure.photo
-          %img{:alt => "", :height => "184", :s3 => "1", :src => "/project_images/#{order.project.image}", :ssl => "1", :width => "280"}/
+          %img{:alt => "", :height => "184", :s3 => "1", :src => "/project_images/#{project.image}", :ssl => "1", :width => "280"}/
       .left-box
         %h3
           %a{:href => ""}
-          =order.project.title
+          =project.title
         %ul.data
           %li
             数量
