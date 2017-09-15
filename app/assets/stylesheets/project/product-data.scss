@@ -65,6 +65,10 @@
   font-family: sans-serif;
 }
 
+.order-box {
+  display: table-cell;
+}
+
 .btn-green {
   background: #427833;
   border-radius: 5px;
@@ -83,4 +87,22 @@
   clear: both;
   display: table;
   content: " ";
+}
+
+#like-btn {
+  color: #8899a6;
+  font-size: 30px;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+#like-btn-unlike {
+  color: #ff2581;
+  font-size: 30px;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+.favorite-btn {
+  text-align: center;
 }

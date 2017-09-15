@@ -15,4 +15,15 @@
           月
           %span 5
           日
-    %a.btn-green{:href => "/projects/#{@project.id}/orders"} お申込み
+
+    %dl.order-box
+      %a.btn-green{:href => "/projects/#{@project.id}/orders"} お申込み
+
+    - if Like.find_by(user_id: @current_user.id, project_id: @project.id)
+      = link_to "/likes/#{@project.id}/destroy",{method: "post"}, class: "favorite-btn" do
+        %span.fa.fa-heart#like-btn-unlike
+    - else
+      = link_to"/likes/#{@project.id}/create", {method: "post"}, class: "favorite-btn" do
+        %span.fa.fa-heart#like-btn
+
+      = @likes_count
