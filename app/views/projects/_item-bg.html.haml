@@ -10,10 +10,10 @@
             %img{:src => "/project_images/#{project.image}"}/
           %h2=project.title
           .info
-            %p.place
-              %i.sprite-2x.icon-pin
+            %p.region
+              %i{class: "fa fa-map-marker"}
               =project.producing_area
-            %p.price
-              %i.sprite-2x.icon-bag
+            %p.shop-price
+              %i{class: "fa fa-shopping-bag"}
               ¥
               =project.price

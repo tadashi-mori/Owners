@@ -12,34 +12,36 @@
         %ul.h-navi
           %li
             %a{:href => "/about"}
-              %i.sprite-2x.icon-q
+              %i{class: "fa fa-question-circle-o"}
               OWNNERSについて
           %li
             %a{:href => "/about"}
-              %i.sprite-2x.icon-book
+              %i{class: "fa fa-book"}
               使い方
           - if @current_user
             %li
               %a{:href => "/users/#{@current_user.id}"}
+                %i{class: "fa fa-user"}
                 =@current_user.name
                 さん
             %li
               %a{:href => "/projects/new"}
+                %i{class: "fa fa-clipboard"}
                 プロジェクト投稿
           - else
             %li
               %a{:href => "/signup"}
-                %i.sprite-2x.icon-plus
-                  会員登録
+                %i{class: "fa fa-plus-circle"}
+                会員登録
             %li
               %a{:href => "/login"}
-                %i.sprite-2x.icon-login
-                  ログイン
+                %i{class: "fa fa-user"}
+                ログイン
 
 
 
 
     .lead
-      %h2.sprite-2.message01 とっておきの、オーナーになろう
+      %h2.sprite-2.message00 とっておきの、オーナーになろう
       %h2.sprite-2.message02 own your favorite, this is yours.
       %a.about-btn{:href => "#message"} Ownersついて
