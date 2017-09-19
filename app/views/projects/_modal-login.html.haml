@@ -3,7 +3,7 @@
     .close-modal
       %i.fa.fa-2x.fa-times
     #login-form
-      %h2 Emailログイン
+      %h2 ログイン
       = form_tag("/login") do
         %input.form-control{:name => "email", :value => @email, :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
         %input.form-control{:name => "password", :placeholder => "パスワード", :style => "color: silver;", :type => "password", :value => @password}/

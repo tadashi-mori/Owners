@@ -68,7 +68,7 @@ class UsersController < ApplicationController
 
   def logout
     session[:user_id] = nil
-    redirect_to("/login")
+    redirect_to("/")
   end
 
   def ensure_corrent_user

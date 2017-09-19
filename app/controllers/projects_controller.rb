@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find_by(id: params[:id])
     @user = @project.users
-    @likes_count = Like.where(project_id: @project.id).count
+    # @likes_count = Like.where(project_id: @project.id).count
   end
 
   def new
