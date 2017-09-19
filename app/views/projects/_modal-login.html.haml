@@ -4,7 +4,10 @@
       %i.fa.fa-2x.fa-times
     #login-form
       %h2 Emailログイン
-      %form{:action => "#"}
-        %input.form-control{:placeholder => "メールアドレス", :type => "text"}/
-        %input.form-control{:placeholder => "パスワード", :type => "password"}/
-        #submit-btn ログイン
+      = form_tag("/login") do
+        %input.form-control{:name => "email", :value => @email, :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
+        %input.form-control{:name => "password", :placeholder => "パスワード", :style => "color: silver;", :type => "password", :value => @password}/
+        %input#submit-btn{:name => "", :type => "submit", :value => "ログイン"}/
+      %div{:style => "display: none;"}
+        %input{:name => "", :type => "hidden"}/
+        %input{:name => "", :type => "hidden"}/
