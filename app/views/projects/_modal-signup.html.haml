@@ -3,8 +3,11 @@
     .close-modal
       %i.fa.fa-2x.fa-times
     #signup-form
-      %h2 Emailで新規登録
-      %form{:action => "#"}
-        %input.form-control{:placeholder => "メールアドレス", :type => "text"}/
-        %input.form-control{:placeholder => "パスワード", :type => "password"}/
-        #submit-btn 新規登録
+      %h2 新規登録
+      = form_tag("/users/create") do
+        %input.form-control{:name => "name", :placeholder => "名前", :style => "color: silver;", :type => "string"}/
+        %input.form-control{:name => "email", :placeholder => "メールアドレス", :style => "color: silver;", :type => "string"}/
+        %input.form-control{:name => "password", :placeholder => "パスワード", :style => "color: silver;", :type => "password"}/
+        %input#submit-btn{:name => "", :type => "submit", :value => "登録"}/
+
+
