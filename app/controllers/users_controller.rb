@@ -20,7 +20,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to("/users/#{@user.id}")
     else
-      render("users/new")
+      render("/")
     end
   end
 
