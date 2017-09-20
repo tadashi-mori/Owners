@@ -2,9 +2,6 @@
   %section.form-login01
     %h1 登録
     = form_tag("/projects/create", {multipart: true}) do
-      %div{:style => "display: none"}
-        %input{:name => "_method", :type => "hidden", :value => "POST"}/
-        %input{:id => "", :name => "data[_Token][key]", :type => "hidden", :value => ""}/
       .input
         .input.text
           %input#last-name.jq-placeholder.style01.w300{:name => "title", :value => "", :placeholder => "タイトル", :style => "color: silver;", :type => "text"}/
@@ -24,6 +21,3 @@
             %input#uv.upload-value{:name => "image", :type => "file"}/
 
       %input#signup_submit.submit.w300.green{:name => "", :type => "submit", :value => "登録"}/
-      %div{:style => "display: none;"}
-        %input{:name => "", :type => "hidden"}/
-        %input{:name => "", :type => "hidden"}/

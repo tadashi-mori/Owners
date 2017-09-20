@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @project = Project.find_by(id: params[:id])
   end
 
   def show
@@ -16,7 +17,13 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(title: params[:title], producing_area: params[:producing_area], price: params[:price], image: "default_project.jpg")
+    @project = Project.new(title: params[:title], producing_area: params[:producing_area], price: params[:price])
+
+    if params[:image]
+      @project.image = "#{@project.id}.jpg"
+      image = params[:image]
+      File.binwrite("public/project_images/#{@project.image}", image.read)
+    end
 
     @project.save
     redirect_to("/projects")
