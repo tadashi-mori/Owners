@@ -22,6 +22,9 @@
       - if Like.find_by(user_id: @current_user.id, project_id: @project.id)
         = link_to "/likes/#{@project.id}/destroy",{method: "post"}, class: "favorite-btn" do
           %span.fa.fa-heart#like-btn-unlike
+
+        = @likes_count
+
       - else
         = link_to"/likes/#{@project.id}/create", {method: "post"}, class: "favorite-btn" do
           %span.fa.fa-heart#like-btn
