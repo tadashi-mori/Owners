@@ -19,6 +19,8 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(title: params[:title], producing_area: params[:producing_area], price: params[:price])
 
+    @project.save
+
     if params[:image]
       @project.image = "#{@project.id}.jpg"
       image = params[:image]
@@ -26,6 +28,7 @@ class ProjectsController < ApplicationController
     end
 
     @project.save
+
     redirect_to("/projects")
   end
 
