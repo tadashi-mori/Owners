@@ -1,29 +1,37 @@
 .hero-single
   %header.header
     %h1
-      OWNERS
       %a{:href => "/"}
+        OWNERS
         %i.sprite-2x.logo
+
     %nav
       %ul.h-navi
         %li
           %a{:href => "/about"}
-            %i.sprite-2x.icon-q
+            %i{class: "fa fa-question-circle-o"}
             OWNNERSについて
         %li
           %a{:href => "/about"}
-            %i.sprite-2x.icon-book
+            %i{class: "fa fa-book"}
             使い方
-        %li
-          %a{:href => "/about"}
-            %i.sprite-2x.icon-plus
+        - if @current_user
+          %li
+            %a{:href => "/users/#{@current_user.id}"}
+              %i{class: "fa fa-user"}
+              =@current_user.name
+              さん
+          %li
+            %a{:href => "/projects/new"}
+              %i{class: "fa fa-clipboard"}
+              プロジェクト投稿
+        - else
+          %li.signup-show
+            %i{class: "fa fa-plus-circle"}
             会員登録
-        %li
-          %a{:href => "/about"}
-            %i.sprite-2x.icon-login
+          %li#login-show
+            %i{class: "fa fa-user"}
             ログイン
-
-
 
     .lead
       %h2.sprite-2.message01

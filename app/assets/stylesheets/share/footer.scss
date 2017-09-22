@@ -37,6 +37,7 @@ footer {
       font-size: 15px;
       position: relative;
       display: inline-block;
+      text-decoration: none;
     }
   }
 }
@@ -44,15 +45,19 @@ footer {
 .copy {
   margin-top: 30px;
   position: relative;
+  display: inline-block;
+  padding-right: 50px;
 }
 
 
 
 .f-sns-area {
   position: absolute;
-  left: 640px;
-  top: 142px;
+  left: 645px;
+  top: 145px;
   z-index: 2;
+  font-size: 30px;
+
 
   li {
     display: inline-block;
